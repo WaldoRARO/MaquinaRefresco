@@ -84,7 +84,6 @@ public class principal extends JFrame {
 	private JLabel lbmensaje;
 	private JPanel panel_1;
 	private JScrollPane scrollPane;
-	private JLabel lbinicio;
 	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -335,12 +334,6 @@ public class principal extends JFrame {
 		    minutos = calendario.get(Calendar.MINUTE);
 		    segundos = calendario.get(Calendar.SECOND);
 		 
-		 lbinicio = new JLabel("BIENVENIDO "+hora+":"+minutos+":"+segundos+"");
-		 lbinicio.setHorizontalAlignment(SwingConstants.CENTER);
-		 lbinicio.setFont(new Font("Comic Sans MS", Font.PLAIN, 22));
-		 lbinicio.setBounds(11, 11, 725, 42);
-		 contentPane.add(lbinicio);
-		 
 	
 		 //estado inicio
 		
@@ -452,7 +445,6 @@ public class principal extends JFrame {
 				estados();
 				
 				//desaparecer msj
-				lbinicio.setVisible(false);
 				
 			}
 		});
@@ -475,7 +467,6 @@ public class principal extends JFrame {
 				estados();
 				
 				//desaparecer msj
-				lbinicio.setVisible(false);
 				
 			}
 		});
@@ -498,7 +489,6 @@ public class principal extends JFrame {
 					estados();
 					
 					//desaparecer msj
-					lbinicio.setVisible(false);
 					
 				}
 			});
@@ -521,7 +511,7 @@ public class principal extends JFrame {
 					
 					
 					//desaparecer msj
-					lbinicio.setVisible(false);
+					
 				}
 				});
 
@@ -556,7 +546,6 @@ public class principal extends JFrame {
 			 		
 			 		//estado q1
 					direccion="q0.png";
-					lbinicio.setVisible(true);
 					estados();
 					
 					
@@ -610,7 +599,7 @@ public class principal extends JFrame {
 						 		direccion="q0.png";
 								estados();	
 								limpiar_rb();
-								lbinicio.setVisible(true);
+					
 						 		
 						 		
 					 		}
@@ -658,7 +647,7 @@ public class principal extends JFrame {
 						 		direccion="q0.png";
 								estados();	
 								limpiar_rb();
-								lbinicio.setVisible(true);
+				
 						 		
 					 		}
 				 			
@@ -707,7 +696,7 @@ public class principal extends JFrame {
 						 		direccion="q0.png";
 								estados();	
 								limpiar_rb();
-								lbinicio.setVisible(true);
+				
 					 		}
 				 			
 				 			else
@@ -753,7 +742,7 @@ public class principal extends JFrame {
 						 		direccion="q0.png";
 								estados();	
 								limpiar_rb();
-								lbinicio.setVisible(true);
+							
 						 	
 					 		}
 				 			
@@ -799,7 +788,7 @@ public class principal extends JFrame {
 						 		direccion="q0.png";
 								estados();	
 								limpiar_rb();
-								lbinicio.setVisible(true);
+							
 					 		}
 				 			
 				 			else
@@ -844,7 +833,7 @@ public class principal extends JFrame {
 						 		direccion="q0.png";
 								estados();	
 								limpiar_rb();
-								lbinicio.setVisible(true);
+							
 						 	
 					 		}
 				 			
